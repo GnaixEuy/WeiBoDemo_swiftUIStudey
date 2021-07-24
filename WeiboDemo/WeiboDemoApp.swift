@@ -11,7 +11,8 @@ import SwiftUI
 struct WeiboDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            PostListView()
         }
     }
 }
