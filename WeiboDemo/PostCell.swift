@@ -54,13 +54,8 @@ struct PostCell: View {
                 .font(.system(size: 17))
                 .padding(.horizontal, 10.0)
             
-            
             if !post.images.isEmpty {
-                loadImage(name: post.images[0])
-                    .resizable()            //图片可缩放
-                    .scaledToFill()         //保持原图框高比 填充整个控件
-                    .frame(width: UIScreen.main.bounds.width - 30, height: (UIScreen.main.bounds.width - 30) * 0.75)
-                    .clipped()             //超出部分裁去
+                PostImageCell(images: post.images, width: UIScreen.main.bounds.width - 30)
             }
             
             Divider()               //swiftUI 提供的很细的一个分割线

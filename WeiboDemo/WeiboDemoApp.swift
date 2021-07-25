@@ -11,8 +11,11 @@ import SwiftUI
 struct WeiboDemoApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            PostListView()
+            NavigationView{
+                PostListView()
+                    .navigationBarTitle("WeiBo_SwiftUI_StudyDemo")
+                    .navigationBarHidden(false)
+            }
         }
     }
 }

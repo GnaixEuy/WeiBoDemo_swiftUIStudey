@@ -10,6 +10,8 @@
 		1F07EDC026ABBEC70057ADF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F07EDBF26ABBEC70057ADF8 /* README.md */; };
 		1F07EDC226ABCAA20057ADF8 /* PostCellToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F07EDC126ABCAA20057ADF8 /* PostCellToolbarButton.swift */; };
 		1F07EDC426ABE2AB0057ADF8 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F07EDC326ABE2AB0057ADF8 /* PostListView.swift */; };
+		1F77984826AD91AB006DF788 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77984726AD91AB006DF788 /* PostImageCell.swift */; };
+		1F77984A26AD9A6F006DF788 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77984926AD9A6F006DF788 /* PostDetailView.swift */; };
 		1F78CC4F26AAC34900E98DCA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F78CC4E26AAC34900E98DCA /* PostCell.swift */; };
 		1FD784DC26AAD52500660466 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FD7848926AAD52500660466 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */; };
 		1FD784DD26AAD52500660466 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FD7848A26AAD52500660466 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */; };
@@ -99,8 +101,6 @@
 		1FFA3E4526AA7D9D005009E5 /* WeiboDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA3E4426AA7D9D005009E5 /* WeiboDemoApp.swift */; };
 		1FFA3E4726AA7D9D005009E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA3E4626AA7D9D005009E5 /* ContentView.swift */; };
 		1FFA3E4926AA7D9F005009E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA3E4826AA7D9F005009E5 /* Assets.xcassets */; };
-		1FFA3E5726AA7D9F005009E5 /* WeiboDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA3E5626AA7D9F005009E5 /* WeiboDemoTests.swift */; };
-		1FFA3E6226AA7D9F005009E5 /* WeiboDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA3E6126AA7D9F005009E5 /* WeiboDemoUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +124,8 @@
 		1F07EDBF26ABBEC70057ADF8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1F07EDC126ABCAA20057ADF8 /* PostCellToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolbarButton.swift; sourceTree = "<group>"; };
 		1F07EDC326ABE2AB0057ADF8 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		1F77984726AD91AB006DF788 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		1F77984926AD9A6F006DF788 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		1F78CC4E26AAC34900E98DCA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		1FD7848926AAD52500660466 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8697cf1ely8gashxj3b09j20u00u040v.jpg; sourceTree = "<group>"; };
 		1FD7848A26AAD52500660466 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d0c21786ly1gavj2c0kcej20c8096dh7.jpg; sourceTree = "<group>"; };
@@ -216,11 +218,7 @@
 		1FFA3E4826AA7D9F005009E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FFA3E4D26AA7D9F005009E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFA3E5226AA7D9F005009E5 /* WeiboDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FFA3E5626AA7D9F005009E5 /* WeiboDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDemoTests.swift; sourceTree = "<group>"; };
-		1FFA3E5826AA7D9F005009E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFA3E5D26AA7D9F005009E5 /* WeiboDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FFA3E6126AA7D9F005009E5 /* WeiboDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDemoUITests.swift; sourceTree = "<group>"; };
-		1FFA3E6326AA7D9F005009E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,8 +340,6 @@
 			isa = PBXGroup;
 			children = (
 				1FFA3E4326AA7D9D005009E5 /* WeiboDemo */,
-				1FFA3E5526AA7D9F005009E5 /* WeiboDemoTests */,
-				1FFA3E6026AA7D9F005009E5 /* WeiboDemoUITests */,
 				1FFA3E4226AA7D9D005009E5 /* Products */,
 				1F07EDBF26ABBEC70057ADF8 /* README.md */,
 			);
@@ -372,26 +368,10 @@
 				1FD7853126AAE66400660466 /* Post.swift */,
 				1F07EDC126ABCAA20057ADF8 /* PostCellToolbarButton.swift */,
 				1F07EDC326ABE2AB0057ADF8 /* PostListView.swift */,
+				1F77984726AD91AB006DF788 /* PostImageCell.swift */,
+				1F77984926AD9A6F006DF788 /* PostDetailView.swift */,
 			);
 			path = WeiboDemo;
-			sourceTree = "<group>";
-		};
-		1FFA3E5526AA7D9F005009E5 /* WeiboDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				1FFA3E5626AA7D9F005009E5 /* WeiboDemoTests.swift */,
-				1FFA3E5826AA7D9F005009E5 /* Info.plist */,
-			);
-			path = WeiboDemoTests;
-			sourceTree = "<group>";
-		};
-		1FFA3E6026AA7D9F005009E5 /* WeiboDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1FFA3E6126AA7D9F005009E5 /* WeiboDemoUITests.swift */,
-				1FFA3E6326AA7D9F005009E5 /* Info.plist */,
-			);
-			path = WeiboDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F77984A26AD9A6F006DF788 /* PostDetailView.swift in Sources */,
 				1FFA3E4726AA7D9D005009E5 /* ContentView.swift in Sources */,
 				1F07EDC226ABCAA20057ADF8 /* PostCellToolbarButton.swift in Sources */,
 				1FD7853026AAE27A00660466 /* PostVipBadge.swift in Sources */,
@@ -613,6 +594,7 @@
 				1F78CC4F26AAC34900E98DCA /* PostCell.swift in Sources */,
 				1FD7853226AAE66400660466 /* Post.swift in Sources */,
 				1F07EDC426ABE2AB0057ADF8 /* PostListView.swift in Sources */,
+				1F77984826AD91AB006DF788 /* PostImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +602,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFA3E5726AA7D9F005009E5 /* WeiboDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +609,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFA3E6226AA7D9F005009E5 /* WeiboDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

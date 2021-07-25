@@ -19,22 +19,33 @@ struct PostListView: View {
         //遍历添加，一个个加入的方式才好设置距离
         List{
             ForEach(postList.list){post in
-                PostCell(post: post)
-                    .listRowInsets(EdgeInsets())
+                ZStack{
+                    PostCell(post: post)
+                    NavigationLink (destination: PostDetailView(post: post)){
+                        EmptyView()
+                    }
+                    .hidden()
+                }
+                .listRowInsets(EdgeInsets())        //调整view的四边边距
             }
         }
         
-        /*直接生成的方法
-            List(postList.list, id: \.id){ post in
-                PostCell(post: post)
-
-            }
+        /*直接生成的方法    listROwInsets会失效
+         List(postList.list, id: \.id){ post in
+         PostCell(post: post)
+         
+         }
          */
     }
 }
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostListView()
+        NavigationView {
+            PostListView()
+                .navigationBarTitle("GnaixEuyStudy Demo")
+                .navigationBarHidden(false)
+        }
+        
     }
 }
