@@ -11,13 +11,13 @@ struct PostCell: View {
     var post : Post
     
     var body: some View {
-        VStack (spacing: 10) {
-            HStack(alignment: .center, spacing: 5){
+        VStack (alignment: .leading, spacing: 10) {
+            HStack(spacing: 5){
                 post.avatarImage
                     .resizable()
                     .scaledToFill()
                     .frame(width: 50, height: 50)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .clipShape(Circle())
                     .overlay(
                         PostVipBadge(isVip: post.vip)
                             .offset(x: 16, y: 16)
