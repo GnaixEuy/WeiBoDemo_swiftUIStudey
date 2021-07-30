@@ -13,7 +13,7 @@ private let ScreenWidth: CGFloat = CGFloat(UIScreen.main.bounds.width)
 
 struct HomeNavigationBar: View {
     
-    @State var leftPercent: CGFloat        //0的时候即为左侧  1为右侧
+    @Binding var leftPercent: CGFloat        //0的时候即为左侧  1为右侧         原先为@State修饰可修改 后改为@Binding意为绑定， 由外部传入属性和这个东西绑定（动态的值）
     
     var body: some View {
         
@@ -99,6 +99,6 @@ struct HomeNavigationBar: View {
 struct HomeNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
         
-        HomeNavigationBar(leftPercent: 0)
+        HomeNavigationBar(leftPercent: .constant(0))
     }
 }
